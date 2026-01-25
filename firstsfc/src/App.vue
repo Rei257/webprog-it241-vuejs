@@ -1,5 +1,6 @@
 <template>
-  <h1>Food</h1>
+  <h1>Personal profile and Fruit</h1>
+  <personal-profile/>
   <food-item/>
 <food-item2/>
 </template>
