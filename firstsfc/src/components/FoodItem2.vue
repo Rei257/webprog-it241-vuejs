@@ -1,5 +1,5 @@
 <template>
-  <div class="Orange">
+  <div class="durian">
     <h2>{{ name }}</h2>
     <p>{{ message }}</p>
   </div>
@@ -9,20 +9,21 @@
 export default {
   data() {
     return {
-      name: 'Orange and Apple',
-      message: 'I like Orange and Apple'
+      name: 'Durian',
+      message: 'I like durian'
     }
   }
 };
 </script>
 
 <style>
-  .santol {
+  .durian {
     border: dashed black 1px;
     display: inline-block;
     margin: 10px;
     padding: 10px;
-    background-color: brown;
+    background-color: rgb(213, 237, 76);
   }
+
 
 </style>
