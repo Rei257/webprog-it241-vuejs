@@ -1,64 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>WEBPROG IT241</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/rwd.css">
- <link rel="stylesheet" href="css/style.css?version=0.1">
-<link rel="stylesheet" href="css/images.css">
-<style>
-
-</style>
+  <title>My first Vue page</title>
+  <link rel="stylesheet" href="css/style.css?version=0.1">
+  <link rel="stylesheet" href="css/flexbox-grid.css">
+  <link rel="stylesheet" href="css/images.css">
 </head>
 <body>
 
-<div class="grid-container">
+<div class="container">
+        <header> <h1>Personal Profile Web page </h1>  
+        </header>
+        <main>
+          <section class="main-content">
+            <div>1 About Me</div>
+            <div>2 Education / Achievements</div>
+            <div>3 Course </div>  
+            <div>4 IT Experience</div>
+            <div>5 Hobbies & Interests</div>
+            <div>6 Goals In Life / Dream</div>  
+            <div>7 Picture Gallery</div>
+          </section>
+          <aside class="sidebar">
+            </aside>
+        </main>
+        <footer> Asia Pacific College   </footer>
+</div>
 
-  <div class="header">
-    <h1>John Carl Gabriel Guzman</h1>
+<div id="app">
+  {{ message }}
+</div>
+
+<div id="app2">
+
+  <div>
+    <img v-for="x in manyFoods" v-bind:src="x">
   </div>
-  
-  <div class="menu">
-    <ul>
-      <li>About Me</li>
-      <li>Education</li>
-      <li>IT Experience</li>
-      <li>Hobbies & Interests</li>
-      <li>Goals In Life</li>
-    </ul>
-  </div>
-  
-  <div class="content">
-    <h2>About Me</h2>
-    <p>21 It student</p>
 
-    <h2>Education / Achievements</h2>
-    <p>2nd year IT student</p>
+</div>
 
-    <h2>IT Experience</h2>
-    <p>Code Combat<br>
-    Python<br>
-    ubuntu and kali<br>
-    Basic HTML & CSS</p>
-
-    <h2>Hobbies & Interest</h2>
-    <p>Music<br>
-    Reading manhwa and manga <br>
-    Watching anime <br>
-    watching movies</p>
-    
-    <h2>Goals In Life / Dream</h2>
-    <p>To travel the whole globe<br>
-     </p>
-
-  </div>  
-  
-  <script src="js/images.js"></script>
-  <script src="js/vue.js"></script>
 
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
-</div>
+<script src="js/vue.js"></script>
+<script src="js/images.js"></script>
 
 </body>
 </html>
