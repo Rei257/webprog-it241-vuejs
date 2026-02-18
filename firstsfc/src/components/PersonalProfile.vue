@@ -19,4 +19,4 @@
 </template>
 
 <script></script>
-<style src="./css/personalprofile.css"></style>
+<style src="./Css/personalprofile.css"></style>
